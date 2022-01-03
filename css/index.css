@@ -30,19 +30,19 @@ img {
 header {
   padding: 0 1rem;
 }
-
-nav {
+header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-nav #logo {
+header nav #logo {
   display: block;
   font-size: 200%;
   color: #6b9deb;
   font-family: Helvetica, sans-serif;
 }
-nav #naviLinks {
+header nav #naviLinks {
+  font-size: 120%;
   width: 25rem;
   display: flex;
   flex-direction: row;
@@ -50,10 +50,10 @@ nav #naviLinks {
   padding: 0.3rem 0;
   color: #1fb273;
 }
-nav #naviLinks li {
+header nav #naviLinks li {
   font-weight: 500;
 }
-nav #naviLinks li a:hover {
+header nav #naviLinks li a:hover {
   display: block;
   transition: all 0.4s linear;
   border-bottom: 2px dotted #f07a64;

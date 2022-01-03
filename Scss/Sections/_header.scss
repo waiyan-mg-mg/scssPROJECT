@@ -1,0 +1,36 @@
+header {
+    padding: 0 1rem;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      #logo {
+        display: block;
+        font-size: 200%;
+        color: $primary;
+        font-family: Helvetica, sans-serif;
+      }
+      #naviLinks {
+        font-size: 120%;
+        width: 25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0.3rem 0;
+        color: $lightGreen;
+        li {
+          font-weight: 500;
+          a {
+            &:hover {
+              display: block;
+              transition: all 0.4s linear;
+              border-bottom: 2px dotted $orange;
+              transform: translateY(-2px);
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  
