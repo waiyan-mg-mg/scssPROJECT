@@ -1,6 +1,6 @@
 // -------------------variable
-@import './variables';
+@use './variables';
 // -------------------initial setup
-@import 'base';
+@use 'base';
 // -------------------header section
-@import './Sections/header';
+@use  './Sections/header';

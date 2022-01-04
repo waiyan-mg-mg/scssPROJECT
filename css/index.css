@@ -29,6 +29,8 @@ img {
 
 header {
   padding: 0 1rem;
+  height: 100vh;
+  position: relative;
 }
 header nav {
   display: flex;
@@ -48,7 +50,7 @@ header nav #naviLinks {
   flex-direction: row;
   justify-content: space-evenly;
   padding: 0.3rem 0;
-  color: #1fb273;
+  color: #6f9e8a;
 }
 header nav #naviLinks li {
   font-weight: 500;
@@ -59,4 +61,42 @@ header nav #naviLinks li a:hover {
   border-bottom: 2px dotted #f07a64;
   transform: translateY(-2px);
   color: white;
+}
+header .hero-content {
+  max-width: 200px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+header .hero-content a:first-child {
+  display: block;
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 120%;
+  transition: all 0.3s;
+}
+header .hero-content a:first-child:hover {
+  background-color: #f07a64;
+  color: white;
+  transform: translateY(-5px);
+}
+header .hero-content a.demo-link {
+  text-decoration: underline;
+  display: inline-block;
+  transition: all 0.3s;
+  transform: translateX(25px);
+}
+header .hero-content a.demo-link .arrow {
+  text-decoration: none;
+  opacity: 0;
+}
+header .hero-content a.demo-link:hover {
+  transform: translateX(5px);
+}
+header .hero-content a.demo-link:hover .arrow {
+  opacity: 1;
 }

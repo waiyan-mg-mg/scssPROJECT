@@ -1,36 +1,77 @@
 header {
-    padding: 0 1rem;
-    nav {
+  padding: 0 1rem;
+  height: 100vh;
+  position: relative;
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    #logo {
+      display: block;
+      font-size: 200%;
+      color: $primary;
+      font-family: Helvetica, sans-serif;
+    }
+    #naviLinks {
+      font-size: 120%;
+      width: 25rem;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      #logo {
-        display: block;
-        font-size: 200%;
-        color: $primary;
-        font-family: Helvetica, sans-serif;
-      }
-      #naviLinks {
-        font-size: 120%;
-        width: 25rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 0.3rem 0;
-        color: $lightGreen;
-        li {
-          font-weight: 500;
-          a {
-            &:hover {
-              display: block;
-              transition: all 0.4s linear;
-              border-bottom: 2px dotted $orange;
-              transform: translateY(-2px);
-              color: white;
-            }
+      justify-content: space-evenly;
+      padding: 0.3rem 0;
+      color: $lightGreen;
+      li {
+        font-weight: 500;
+        a {
+          &:hover {
+            display: block;
+            transition: all 0.4s linear;
+            border-bottom: 2px dotted $orange;
+            transform: translateY(-2px);
+            color: white;
           }
         }
       }
     }
   }
-  
+  .hero-content {
+    max-width: 200px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    a:first-child {
+      display: block;
+      background-color: white;
+      padding: 20px 25px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      text-align: center;
+      font-size: 120%;
+      transition: all .3s;
+      &:hover{
+        background-color: $orange;
+        color: white;
+        transform: translateY(-5px);
+      }
+    }
+    a.demo-link {
+      text-decoration: underline;
+      display: inline-block;
+      transition: all 0.3s;
+      transform: translateX(25px);
+      .arrow {
+        text-decoration: none;
+        opacity: 0;
+      }
+      // add transiton
+      &:hover {
+        transform: translateX(5px);
+        .arrow {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
