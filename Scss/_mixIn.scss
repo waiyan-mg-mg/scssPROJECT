@@ -1,0 +1,7 @@
+@mixin sectionHeader($font: 150%, $color: white, $mb: 3rem) {
+  text-align: center;
+  color: $color;
+  margin-bottom: $mb;
+  font-size: 150%;
+  font-size: $font;
+}

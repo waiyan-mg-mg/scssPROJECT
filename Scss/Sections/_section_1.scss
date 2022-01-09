@@ -1,0 +1,32 @@
+#sec1 {
+  padding-bottom: 5rem;
+  h2 {
+    @include sectionHeader();
+  }
+  .details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    div {
+      width: 30%;
+      height: 50%;
+      padding: 20px 25px;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+      transform: scale(0.9);
+      &:hover {
+        box-shadow: 1px 1px 5px $orange, -1px -1px 5px $orange;
+        transform: translateY(-5px);
+        transform: scale(1);
+      }
+      h3 {
+        @include sectionHeader(120%, rgba(165, 104, 44, 0.822), 1rem);
+      }
+      p {
+        line-height: 1.5em;
+        text-align: justify;
+      }
+    }
+  }
+}

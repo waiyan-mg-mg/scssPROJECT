@@ -1,6 +1,11 @@
 // -------------------variable
-@use './variables';
+@import "./variables";
+// 
+@import './mixIn';
 // -------------------initial setup
-@use 'base';
+@import "base";
+
 // -------------------header section
-@use  './Sections/header';
+@import "./Sections/header";
+
+@import "./Sections/section_1";
